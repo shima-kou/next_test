@@ -8,6 +8,7 @@ export default function BlogId({ information }) {
     <main className={styles.main}>
       <h1 className={styles.title}>{information.title}</h1>
       <p className={styles.publishedAt}>{information.publishedAt}</p>
+      <p className='category'>{blog.category && `${blog.category.name}`}</p>
       <div
         className={styles.microEditor}
         dangerouslySetInnerHTML={{
